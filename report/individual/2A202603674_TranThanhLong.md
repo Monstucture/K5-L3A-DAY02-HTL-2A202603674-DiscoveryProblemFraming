@@ -229,7 +229,7 @@ Tôi sẽ phản biện nếu muốn thông tin của ứng cử viên theo đ�
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
---- Problem là HR nhận nhiều CV của ứng cử viên và phải tổng kết thông tin trước khi phân loại để phỏng vấn. Quy trình lấy thông tin và điền thủ công, quy trình được đề xuất là cắt giảm quy trình lấy và nhập dữ liệu thủ công chỉ tập trung vào review với phân loại hồ sơ. Metric muốn đo là tổng số hồ sơ tiếp nhận đã phân loại và có thông tin trên dữ liệu ứng cử viên. Boundry là AI không tự quyêt duyệt hồ sơ, không tự loại hồ sơ thiếu thông tin và tưởng tượng số không có thực.
+--- Problem là HR nhận nhiều CV của ứng cử viên và phải tổng kết thông tin trước khi phân loại để phỏng vấn. Quy trình lấy thông tin và điền thủ công, quy trình được đề xuất là cắt giảm quy trình lấy và nhập dữ liệu thủ công chỉ tập trung vào review với phân loại hồ sơ. Metric muốn đo là tổng số hồ sơ tiếp nhận đã phân loại và có thông tin trên dữ liệu ứng cử viên. Boundry là AI không tự quyêt duyệt hồ sơ, không tự loại hồ sơ thiếu thông tin và tưởng tượng số không có thực. Quyết định not yet vì bằng chứng đa phần là dữ liệu gián tiếp chưa xác định được metric để đo hợp lý là công cụ ATS hiện tại vẫn giúp phần lớn việc sàn lọc
 
 ## 7. Tài liệu tham khảo
 

@@ -8,7 +8,7 @@
 - Tên nhóm: HTL
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: Not Yet
 
 ---
 
