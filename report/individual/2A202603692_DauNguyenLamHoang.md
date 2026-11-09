@@ -136,16 +136,16 @@ HIỆN TẠI — khoảng 3 phút/email (vòng CV), 10 phút/email (sau phỏng 
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 2 candidate: sàng lọc CV khi một vị trí có 80–150 CV (#3 trong bảng nhóm) và xếp lịch phỏng vấn (#4) | Candidate sàng lọc CV góp vào cluster B và C; candidate xếp lịch tạo thành cluster D. Nhóm chọn cluster B (trích xuất, chuẩn hóa CV), gần với vấn đề của tôi |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt cho candidate của Long (tổng hợp đánh giá của Technical Staff): "Vấn đề là Technical Staff không ghi nhận xét đầy đủ sau mỗi vòng, hay có đủ nhận xét nhưng HR khó tổng hợp? Nếu là vế đầu, một scorecard bắt buộc điền ngay sau phỏng vấn có thể đã đủ mà không cần AI." ||
+| Nhận phản biện | Câu hỏi tôi nhận được (Long): "Thời gian xử lý 1 CV và tiêu chí thực để quyết định người phù hợp cũng như số lượng?" | Tôi đã sửa gì: *(Tự điền, ví dụ: bổ sung baseline thời gian/CV và số lượng CV vào quy trình nhóm — kiểm tra lại cho đúng việc đã làm)* |
+| Gom cluster / cây OST || |
+| Chọn candidate problem | Tham gia chấm điểm shortlist A/B/C | Nhóm chọn B — trích xuất và chuẩn hóa CV |
+| Kiểm chứng / research || |
+| Quy trình nhóm | Dùng AI rà soát và hoàn thiện các mục 4–8 của báo cáo nhóm | Phát hiện mâu thuẫn: mục tiêu "hơn 20 CV/ngày" thấp hơn lượng CV nhận 50–100/ngày |
+| Problem Statement | Chỉnh sửa mục 7 (Problem Statement v1) trên file báo cáo nhóm và đẩy lên nhánh `hoang218` | Success metric có baseline, target, cách đo cụ thể; thêm AI intervention point, rủi ro và người kiểm tra |
+| Mức can thiệp AI | Góp ý chọn mức Workflow, dùng Rule cho các bước kiểm tra trùng và định dạng | Nhóm chọn Workflow |
+| Quyết định | Đề xuất Not Yet vì nhóm chưa phỏng vấn HR thật và rủi ro dữ liệu cá nhân còn cao | *(Tự điền: quyết định cuối nhóm chốt)* |
 
 ---
 
