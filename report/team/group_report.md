@@ -5,9 +5,9 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: HTL
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -18,26 +18,20 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Long | Lấy thông tin và đánh giá từ các Technical Staff để đưa ra quyết định sau nhiều vòng phỏng vấn | HR | Các ngày và vòng phỏng vấn rời rạc làm thiếu thông tin để đánh giá | |
+| 2 | Long | Khi có nhiều ticket đang được xử lý đồng thời, tôi muốn biết mỗi ticket đang ở trạng thái nào, ai chịu trách nhiệm chính và đang bị vướng ở đâu, để đảm bảo công việc được tiếp tục xử lý và không bị bỏ quên | IT Support / IT Team Lead | Bước cập nhật trạng thái và người phụ trách. Có trường hợp nhiều người cùng tham gia một task nhưng không rõ ai chịu trách nhiệm chính; ticket không được reassign hoặc close khi công việc đã thay đổi trạng thái | Có nhất thiết phải sử dụng AI cho việc phân loại ticket? Thay vào đó, làm 1 trang web dashboard tổng hợp ticket chung (Tùng) |
+| 3 | Hoàng | Khi một vị trí có khoảng 80-150 CV, tôi muốn biết tối thiểu ai phù hợp ở trong vị trí đó trong vòng 2 ngày | HR | Phụ trách tuyển dụng 3-4 người cùng một vị trí | Thời gian xủ lý 1 CV và tiêu chí thực để quyết dịnh người phù hợp cũng như số lượng (Long) |
+| 4 | Hoàng | Khi đã chốt được những cá nhân được chọn thì sẽ sắp xếp một thời gian phỏng vấn phù hợp để không bị trùng lịch với người khác | HR | làm việc với trưởng bộ phận(phỏng vấn), ứng viên | |
+| 5 | Tùng |  Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng | HR | Tốn thời gian để nhập dữ liệu vào bảng tổng hợp với các trường cố định  *Họ tên, email...*. |  |
+| 6 | Tùng | Quy trình trình ký và duyệt chi bị nghẽn do hóa đơn/chứng từ bản cứng chờ sếp duyệt trực tiếp, dẫn đến thanh toán chậm cho nhà cung cấp | Kế toán, Trưởng phòng, Ban Giám Đốc | Diễn ra liên tục hàng tuần, làm trễ hạn thanh toán và ảnh hưởng đến uy tín với đối tác | Quy trình thì bạn định dùng AI để duyệt những cái dễ hay AI để tóm tắt và sếp duyệt. Nều dùng AI thì bạn căn cứ vào những yếu tố nào để tự động duyệt (Long) |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A | 1, 3, 6 | Pain từ người khác |
+| B | 2, 4 | Cần đọc tổng hợp nhiều thông tin |
+| C | 5 | Task tốn thời gian |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
