@@ -119,37 +119,83 @@ Tổng hợp:
 
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
-```text
+```mermaid
+
+flowchart TD
+    A([Bắt đầu nhận CV]) --> B[Nhận CV từ các nguồn khác nhau]
+    B --> C[Tải xuống và tập hợp CV]
+    C --> D[HR mở và đọc từng CV]
+    D --> E[Trích xuất thông tin ứng viên]
+    E --> F[Nhập thông tin vào Excel / ATS]
+    F --> G[Kiểm tra và chỉnh sửa dữ liệu]
+    G --> H[Tổng hợp danh sách ứng viên]
+    H --> I([Hoàn thành])
 
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | HR | Nhận CV từ kênh đăng tuyển | CV được nhận | 500-1000 hồ sơ mỗi đợt và khoảng 50 - 100 mỗi ngày | Cần xác minh các nguồn tiếp nhiều CV trùng bởi ứng cử viên nộp cùng 1 vị trí ở nhiều trang khác nhau |
+| 2 | HR | CV từ Email, nền tảng tuyển dụng, nguồn giới thiệu, công ty nhân sự giới thiệu,... | Tập hợp file CV | Không rõ ko đo được | Phải tải từng file về và sử ly thông tin |
+| 3 | HR | Các file CV với định dạng khác nhau | Nội dung thông tin ứng cử viên | 3'-10' cho 1 CV, trung bình 1 ngày được 10 - 15 nếu không phải gọi phone screening | HR đọc và tìm thông tin cần thiết |
+| 4 | HR | Nội dung CV | Thông tin được nhập vào Excel/ATS | Không thể đo | Có thể phải nhập thủ công nếu thiếu dữ liệu |
+| 5 | HR | Bảng thông tin ứng viên | Danh sách đã kiểm tra và tổng hợp | khoảng 1 tuần sau hạn nộp | Kiểm tra thiếu thông tin, sai sót và trùng lặp |
 
-**Bottleneck chính:**
+**Bottleneck chính:** HR phải đọc và thống kê nhiều CV có định dạng khác nhau để lấy thông tin dữ liệu vô bản chuẩn hóa, mỗi lần thiếu thông tin phải gọi or bỏ qua ứng cử viên để kịp tiến độ báo cáo
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
-```text
+```mermaid
+
+flowchart TD
+    A([Bắt đầu]) --> B[HR tải CV lên hệ thống]
+    B --> C[Kiểm tra định dạng và file trùng lặp]
+    C --> D{File hợp lệ?}
+
+    D -->|Không| E[Đánh dấu lỗi và yêu cầu HR xử lý]
+    E --> B
+
+    D -->|Có| F[AI đọc và trích xuất thông tin CV]
+    F --> G[Chuẩn hóa dữ liệu theo cấu trúc chung]
+    G --> H[Rule kiểm tra trường dữ liệu và định dạng]
+    H --> I{Thông tin đáng tin cậy?}
+
+    I -->|Không| J[Đưa vào danh sách cần HR kiểm tra]
+    I -->|Có| K[Tạo bản ghi ứng viên]
+
+    J --> L[HR kiểm tra và chỉnh sửa]
+    L --> K
+
+    K --> M[Tổng hợp danh sách ứng viên]
+    M --> N[HR kiểm tra và xác nhận]
+    N --> O[Xuất Excel / đồng bộ ATS]
+    O --> P([Hoàn thành])
 
 ```
+
+| Bước | Công việc | Loại xử lý | Giải thích |
+|---:|---|---|---|
+| 1 | Tải CV lên hệ thống | Human | HR cung cấp CV |
+| 2 | Kiểm tra định dạng, phát hiện file trùng | Rule | Kiểm tra file, email hoặc thông tin nhận diện trùng |
+| 3 | Đọc CV và trích xuất thông tin | AI | Nhận diện nội dung từ nhiều định dạng CV |
+| 4 | Chuẩn hóa thông tin | AI + Rule | AI trích xuất; Rule chuẩn hóa trường dữ liệu và định dạng |
+| 5 | Kiểm tra thông tin thiếu hoặc không chắc chắn | Rule | Đánh dấu dữ liệu thiếu, không hợp lệ hoặc cần xác minh |
+| 6 | Xem xét dữ liệu không chắc chắn | Human | HR kiểm tra CV gốc và chỉnh sửa |
+| 7 | Tổng hợp danh sách ứng viên | Workflow | Hệ thống tạo bảng chung |
+| 8 | Kiểm tra và xác nhận kết quả | Human | HR chịu trách nhiệm xác nhận |
+| 9 | Xuất Excel / đồng bộ ATS | Workflow | Đưa dữ liệu vào nơi HR sử dụng |
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5 bước chính | 6 tới 9 bước xử lý | 3 bước Human làm trường hợp đặt biệt cần xử lý thì 6 bước |
+| Tổng thời gian | Baseline là 20 CV trong ngày | CV trong ngày được xử lý liền | Đo bằng tổng kết số lượng hồ sơ được xử lý sau đợt nộp hồ sơ |
+| Số bước thủ công | Khoảng 5 bước chính do HR thực hiện | Khoảng 2 bước chính: upload và xác nhận | Mục đích để giảm thao tác thủ công cho HR và giảm sai số |
+| Bottleneck chính | Đọc, trích xuất và nhập CV thủ công | HR kiểm tra các trường thông tin không chắc chắn đọc lướt qua kiểm thử | Cần đo tỷ lệ dữ liệu cần review tăng hay giảm và vì lý do gì |
+| Rủi ro mới phát sinh | Sai sót do nhập dữ liệu thủ công, bỏ sót CV | AI trích xuất sai, đọc sai định dạng, nhận diện trùng lặp sai | Cần có fallback và HR review |
 
 ---
 
@@ -157,16 +203,18 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì) | |
+| **Actor** | HR người phụ trách tiếp nhận và tổng hợp CV |
+| **Quy trình** | Tiếp nhận CV -> Tập hợp CV -> Đọc CV -> Trích xuất thông tin -> Nhập vào hệ thống dữ liệu -> Kiểm tra và tổng hợp danh sách |
+| **Bottleneck** | HR phải đọc và trích xuất thủ công thông tin từ nhiều CV có định dạng khác nhau, sau đó nhập dữ liệu vào một danh sách chung |
+| **Impact** | Tốn thời gian tổng hợp; nguy cơ bỏ sót, nhập sai hoặc trùng lặp thông tin; gây khó khăn cho việc tra cứu và sàng lọc ứng viên |
+| **Success Metric** (baseline → target, cách đo) | Hoàn thành dữ liệu của hơn 20 CV trong 1 ngày với độ chính xác cao. Đo bằng cách so sánh dữ liệu hệ thống với CV gốc |
+| **Boundary** (AI không được làm gì) | AI không được tự loại ứng viên, không tự hire ứng viên, không tự bịa thông tin còn thiếu, không gửi email cho ứng viên và không tự ghi đè dữ liệu đã được HR xác nhận |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+- (AI) Chưa có tiêu chuẩn cụ thể để đánh giá thông tin CV được trích xuất chính xác (dồng ý)
+- (AI) Không nên để AI tự động loại ứng viên hoặc tự quyết định tuyển dụng (không đồng ý)
+- Có thể giải quyết bằng ATS hoặc tính năng có sẵn thay vì xây sản phẩm riêng (Không đồng ý)
 
 ---
 
