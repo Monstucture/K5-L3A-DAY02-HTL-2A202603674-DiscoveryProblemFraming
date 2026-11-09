@@ -95,14 +95,12 @@ Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file 
 | Hiện đang xử lý bằng cách nào (workaround)? | |
 | Mất bao lâu, bao lần? | |
 | Insight / opportunity rút ra | |
-
 | Người được hỏi (vai trò, không ghi tên thật) | Rất cần cơ chế tự động hóa việc nhập liệu https://empikalyze.in/knowledge/recruitment-statistics/ai-recruitment-statistics|
 | Câu nói đáng nhớ nhất (nguyên văn) | "LinkedIn's Future of Recruiting research consistently reports that a majority of talent professionals are optimistic about AI and believe it will make their jobs more efficient rather than replace them." |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
 | Hiện đang xử lý bằng cách nào (workaround)? | |
 | Mất bao lâu, bao lần? | |
 | Insight / opportunity rút ra | |
-
 | Người được hỏi (vai trò, không ghi tên thật) | Trích xuất thông tin chính xác lên đến 90% https://ieeexplore.ieee.org/document/10898204 |
 | Câu nói đáng nhớ nhất (nguyên văn) | "The simulation experiment showed that the text recognition rate of 2,000 resumes was 98%, the accuracy rate of text recognition was 98%" |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
