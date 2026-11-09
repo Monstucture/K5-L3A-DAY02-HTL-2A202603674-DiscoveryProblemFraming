@@ -6,7 +6,7 @@
 
 - Tên nhóm: HTL
 - Candidate problem nhóm chọn (1 câu): Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Quyết định cuối (Go / Not Yet / No-Go): Not Yet
 
 ## Thành viên
 
