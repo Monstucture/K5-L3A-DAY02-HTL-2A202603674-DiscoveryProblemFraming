@@ -19,7 +19,7 @@ Người chấm xem file báo cáo cá nhân đã đổi tên theo mẫu `MSSV_H
 
 ## Phần nhóm — 60 điểm
 
-Người chấm xem file `report/team/group_report.md` (giống nhau trong repo của mọi thành viên).
+Người chấm xem file `report/team/group_report.md` trên repo chung của nhóm (một bản duy nhất).
 
 | Tiêu chí | CP | Điểm | Bằng chứng | Điều kiện được điểm / bị trừ |
 |---|---|---:|---|---|
@@ -47,8 +47,9 @@ Bonus là điểm cộng cho **chất lượng bài lab**, không phải điểm
 
 - Điểm chính tối đa 100. Bonus không tự cộng vào điểm chính và tối đa 10.
 - Chấm theo commit cuối cùng trước deadline (hoặc trước hạn gia hạn, nếu được gia hạn). Commit sau mốc này không được chấm; không có mức trừ điểm nộp muộn.
-- **Sai tên repo hoặc sai tên file báo cáo**: trừ 5 điểm. Repo theo mẫu `K5-<L3A hoặc L3B>-DAY02-HoVaTen-MSSV-DiscoveryProblemFraming`; file báo cáo theo mẫu `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md`. Giữ nguyên tên `MSSV_HoTen.md` (chưa đổi) cũng tính là sai.
-- **Thiếu phần nhóm trong repo cá nhân** (không copy `group_report.md` hoặc `TEAM.md`): phần nhóm của người đó bị 0.
+- **Sai tên repo hoặc sai tên file báo cáo**: trừ 5 điểm. Repo theo mẫu `K5-<L3A hoặc L3B>-DAY02-HoVaTen-MSSV-DiscoveryProblemFraming`, trong đó `HoVaTen-MSSV` là của nhóm trưởng. File báo cáo cá nhân theo mẫu `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md`. Giữ nguyên tên `MSSV_HoTen.md` (chưa đổi) cũng tính là sai.
+- **Thiếu `report/team/group_report.md` hoặc `TEAM.md` trong repo nhóm**: phần nhóm bị 0.
+- **Thành viên không nộp link repo nhóm trên LMS** bằng tài khoản của mình: không có bài để chấm.
 - **Không có đóng góp trong `TEAM.md`** hoặc các thành viên khác xác nhận không tham gia: phần nhóm của người đó bị 0.
 - **Bịa kết quả phỏng vấn/survey**: C7 bị 0 cho cả nhóm.
 - **Báo cáo cá nhân trùng lặp đáng kể với người khác**, hoặc **phần lớn báo cáo cá nhân do AI viết thay** (cả scan, Problem Card và reflection): phần cá nhân bị 0. Nếu chỉ phần reflection do AI viết thay thì áp dụng C4 = 0, các tiêu chí khác chấm bình thường.

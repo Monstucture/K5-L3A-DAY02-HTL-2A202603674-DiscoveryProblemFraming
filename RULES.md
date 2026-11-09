@@ -31,8 +31,9 @@ Mỗi lần dùng AI, ghi vào bảng "Dùng AI" trong báo cáo cá nhân: dùn
 ## 3. Làm nhóm
 
 - Nhóm 3–4 người, do coach chia hoặc tự lập tại lớp.
-- Phần nhóm (`report/team/group_report.md` và `TEAM.md`) là **một bản chung**. Nhóm hoàn thiện xong thì **mỗi thành viên copy nguyên bản đó vào repo của mình**.
-- Mỗi người khai rõ phần mình làm trong `TEAM.md`. Thành viên không có đóng góp thực tế sẽ không được tính điểm phần nhóm.
+- Cả nhóm làm trên **một repo** do nhóm trưởng fork. Phần nhóm (`report/team/group_report.md` và `TEAM.md`) là **một bản chung** viết thẳng trên repo đó. Không copy sang repo cá nhân.
+- Mỗi người khai rõ phần mình làm trong `TEAM.md`, và commit báo cáo cá nhân bằng tài khoản GitHub của mình. Thành viên không có đóng góp thực tế sẽ không được tính điểm phần nhóm.
+- Mỗi thành viên nộp link repo nhóm lên LMS bằng tài khoản LMS của mình.
 - Nếu nhóm bất đồng mà không chốt được, ghi rõ trong mục "Xử lý bất đồng" của báo cáo nhóm.
 
 ## 4. Liêm chính

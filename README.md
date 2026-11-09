@@ -1,6 +1,6 @@
 # K5 · L3 · Day 02 — Discovery & Problem Framing
 
-> **Loại bài: Cá nhân + Nhóm.** Một phần làm cá nhân, một phần làm theo nhóm 3–4 người. **Mỗi học viên tự nộp một repo riêng**, trong đó có cả phần cá nhân và bản sao phần nhóm. Xem [SUBMISSION.md](SUBMISSION.md).
+> **Loại bài: Cá nhân + Nhóm.** Một phần làm cá nhân (CP1, CP2, CP7), một phần làm theo nhóm 3–4 người (CP3–CP6). **Mỗi nhóm làm chung một repo do nhóm trưởng fork.** Mỗi học viên vẫn nộp link repo đó trên LMS bằng tài khoản của mình. Xem [SUBMISSION.md](SUBMISSION.md).
 
 Hôm nay bạn chưa xây AI. Hôm nay bạn **tìm đúng bài toán**: đi từ một vấn đề thật quanh mình, vẽ quy trình, viết Problem Statement đủ chặt, kiểm chứng với người thật, rồi mới quyết định có nên dùng AI không. Nếu dùng thì ở mức nào: Rule, Workflow hay Agent. Cuối cùng là kết luận **Go / Not Yet / No-Go**.
 
@@ -37,20 +37,20 @@ Sau buổi này, bạn làm được:
 
 ## Bắt đầu
 
-1. Bấm **Fork** (góc trên bên phải repo này). Ở trang *Create a new fork*, chọn tài khoản GitHub cá nhân làm **Owner** và sửa ô **Repository name** theo cú pháp:
-
+1. **Nhóm trưởng** bấm **Fork** (góc trên bên phải repo này). Ở trang *Create a new fork*, chọn tài khoản GitHub của nhóm trưởng làm **Owner** và sửa ô **Repository name** theo cú pháp:
    ```text
    K5-<L3A hoặc L3B>-DAY02-HoVaTen-MSSV-DiscoveryProblemFraming
    ```
 
-   Ví dụ: `K5-L3A-DAY02-NguyenVanAn-20241234-DiscoveryProblemFraming` (lớp L3A) hoặc `K5-L3B-DAY02-NguyenVanAn-20241234-DiscoveryProblemFraming` (lớp L3B).
+   `HoVaTen-MSSV` là họ tên và MSSV của **nhóm trưởng** (không dấu, không khoảng trắng). Ví dụ nhóm trưởng Nguyễn Văn An, MSSV `20241234`, lớp L3A: `K5-L3A-DAY02-NguyenVanAn-20241234-DiscoveryProblemFraming`.
 
    Lưu ý khi fork:
    - Nếu lỡ để tên mặc định, vào **Settings → General → Repository name** trong repo fork để đổi tên.
-   - Làm bài và commit trên repo fork của bạn. **Không tạo Pull Request về repo gốc**: bài nộp là link repo fork trên LMS.
-   - Repo fork có cùng chế độ public/private với repo gốc và không tự đổi được. Xem cách nộp trong [SUBMISSION.md](SUBMISSION.md).
-
-2. Đổi tên file báo cáo cá nhân `report/individual/MSSV_HoTen.md` thành MSSV và tên của bạn, ví dụ `report/individual/20241234_NguyenVanAn.md`.
+   - Cả nhóm làm bài và commit trên **đúng repo fork này**. Không tạo Pull Request về repo gốc. Không fork thêm repo cá nhân.
+   - Nhóm trưởng vào **Settings → Collaborators**, mời các thành viên. Mỗi người chấp nhận lời mời rồi mới commit được.
+   - Repo fork có cùng chế độ public/private với repo gốc và không tự đổi được. Nếu fork là private, thêm coach làm collaborator theo hướng dẫn trên LMS.
+   - Mỗi thành viên nộp **cùng một link** repo này trên LMS bằng tài khoản của mình. Chi tiết trong [SUBMISSION.md](SUBMISSION.md).
+2. Mỗi thành viên tạo **một file báo cáo cá nhân** trong `report/individual/` trên repo chung: copy `MSSV_HoTen.md` thành file mới, đặt tên MSSV và họ tên của mình, ví dụ `report/individual/20241234_NguyenVanAn.md`. Giữ template cho đến khi mọi người đã có file riêng, rồi xóa template. Commit bằng tài khoản GitHub của chính mình. Không viết hộ lẫn nhau.
 3. Đọc tài liệu theo thứ tự dưới đây, rồi làm lần lượt từ CP0 đến CP7.
 
 ## Thuật ngữ
@@ -91,11 +91,11 @@ K5-<L3A hoặc L3B>-DAY02-HoVaTen-MSSV-DiscoveryProblemFraming/
 ├── CHECKPOINTS.md
 ├── RUBRIC.md
 ├── SUBMISSION.md
-├── TEAM.md                          ← nhóm điền chung, mỗi người copy vào repo mình
+├── TEAM.md                          ← điền trên repo chung; mỗi người tự điền phần của mình
 ├── docs/                            ← worksheet, bài mẫu, framework (chỉ đọc)
 ├── report/
-│   ├── individual/MSSV_HoTen.md     ← phần CÁ NHÂN: CP1, CP2, CP7
-│   ├── team/group_report.md         ← phần NHÓM: CP3 → CP6 (bản chung của nhóm)
+│   ├── individual/                  ← mỗi thành viên một file, ví dụ 20241234_NguyenVanAn.md
+│   ├── team/group_report.md         ← phần NHÓM: CP3 → CP6, một bản trên repo chung
 │   └── assets/                      ← ảnh quy trình, Mermaid, ảnh survey, ghi chú phỏng vấn
 └── src/                             ← lab này không có code (xem src/README.md)
 ```
