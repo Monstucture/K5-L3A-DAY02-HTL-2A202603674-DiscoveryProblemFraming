@@ -245,14 +245,16 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | HR đọc tài liệu thủ công *hoặc* yêu cầu ứng viên điền vào form có sẵn *hoặc* sử dụng các công cụ của bên thứ 3 | Nếu số lượng ứng tuyển ít, hoặc cty có ngân sách sử dụng dịch vụ bên thứ 3 |  | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | HR đọc CV và nhập liệu thủ công | Nếu số lượng ứng tuyển ít | Mất thời gian công sức của HR  | Có thể |
+| **Rule** |  Yêu cầu ứng viên điền vào form có sẵn | Công ty có khả năng quảng bá ứng tuyển đủ lớn | Ứng viên tiềm năng có thể không biết hoặc bỏ qua | Có thể |
+| **Workflow** | Sử dụng AI OCR để "đọc" và trích xuất dữ liệu | Công ty có nhiều người ứng tuyển và thường xuyên tuyển dụng | Duy trì một hệ thống chạy AI và tool/dashboard tương ứng | Chọn |
+| **Agent** | Sử dụng các công cụ AI tự động lọc ứng viên của bên thứ 3 | Công ty có ngân sách sử dụng dịch vụ bên thứ 3 | Rủi ro bảo mật thông tin cá nhân của cả ứng viên lẫn HR, không nắm được cơ sở dữ liệu của ứng viên cho các lần tuyển sau | Không |
 
-**Mức chọn:**
+**Mức chọn:*Workflow*
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:
+**- Nhập tài liệu thủ công tốn thời gian và công sức mà không mang lại giá trị lớn
+**- Yêu cầu ứng viên điền vào form có sẵn rồi kèm theo CV: vô tình loại bỏ các ứng viên tiềm năng chỉ vì rào cản thao tác kỹ thuật. Việc đã có CV lại phải điền form là lặp lại dữ liệu khiến nhiều ứng viên cảm thấy sự không chuyên nghiệp trong quá trình tuyển dụng của công ty.
 
 ### 6.3. AI Canvas rút gọn
 
