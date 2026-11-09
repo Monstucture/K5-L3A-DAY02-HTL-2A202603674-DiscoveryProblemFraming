@@ -191,15 +191,15 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: ```Vùng 1: Thấp Phức Tạp - Thấp Mơ Hồ```
 
-Vì sao:
+Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
+| **No AI** (sửa quy trình) | HR đọc tài liệu thủ công hoặc yêu cầu ứng viên điền vào form có sẵn hoặc sử dụng các công cụ của bên thứ 3 | Không  | | |
 | **Rule** | | | | |
 | **Workflow** | | | | |
 | **Agent** | | | | |
