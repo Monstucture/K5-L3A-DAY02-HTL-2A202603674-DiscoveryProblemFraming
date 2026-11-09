@@ -55,3 +55,21 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 -  Mỗi người có hướng phản biện khác nhau và có thể chỉ ra lỗ hổng trong logic của những người còn lại
 - Mỗi team member có kinh nghiệm riêng củng cố cho hiểu biết cá nhân ở từng problem
+### DauNguyenLamHoang-2A202603692
+
+**Phần việc phụ trách:**
+
+- Team Lead, CP3, CP4, CP6
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Merge conflict, assign task, làm CP3 cùng với team members, CP4, CP6 với team members
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Phần CP3, CP5, CP6 trong `group_report.md`
+
+**Điều mình học được từ phần nhóm:**
+
+-  Mỗi người có những hướng tư duy khác nhau, logic tốt, được học hỏi nhiều từ các bạn trong nhóm
+-  Nếu ra vấn đề mà nhóm gặp phải và các hướng giải quyết của mỗi người khác nhau nhưng đều rất tốt
