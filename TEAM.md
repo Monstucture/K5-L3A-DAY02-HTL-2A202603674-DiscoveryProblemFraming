@@ -41,11 +41,11 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- Team Lead, CP5, CP6
+- Team Lead, CP3, CP5, CP6
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- Fork git, assign task, 
+- Fork git, merge conflict, assign task, làm CP3 cùng với team members, CP5 với review CP4, CP6 với team members
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
@@ -53,4 +53,5 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Điều mình học được từ phần nhóm:**
 
-- 
+-  Mỗi người có hướng phản biện khác nhau và có thể chỉ ra lỗ hổng trong logic của những người còn lại
+- Mỗi team member có kinh nghiệm riêng củng cố cho hiểu biết cá nhân ở từng problem

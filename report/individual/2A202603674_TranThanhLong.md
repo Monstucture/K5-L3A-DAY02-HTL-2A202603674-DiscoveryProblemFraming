@@ -183,14 +183,14 @@ flowchart TD
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
+| Pitch Problem Card | Add 2 problem card cá nhân của tôi | Củng cố thêm ý vào bài nhóm |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Thời gian xủ lý 1 CV và tiêu chí thực để quyết dịnh người phù hợp cũng như số lượng; Quy trình thì bạn định dùng AI để duyệt những cái dễ hay AI để tóm tắt và sếp duyệt. Nều dùng AI thì bạn căn cứ vào những yếu tố nào để tự động duyệt  |  |
+| Nhận phản biện | Câu hỏi tôi nhận được: Có nhất thiết phải sử dụng AI cho việc phân loại ticket? Thay vào đó, làm 1 trang web dashboard tổng hợp ticket chung | Tôi đã sửa gì: Việc phân loại những ticket có đủ số liệu giup công việc của support dễ dàng hơn |
+| Gom cluster / cây OST | Gom cluster các vấn đề liên quan | |
+| Chọn candidate problem | Mọi người thống nhất candidate problem để build process | Đẩy tiến độ và xác định mục tiêu nhóm |
+| Kiểm chứng / research | Review phần bài làm của Tùng | |
+| Quy trình nhóm | Tạo quy trình trước và sau | |
+| Problem Statement | Dùng AI để phản biên về độ cần thiết của quy trình | giúp loại bỏ các problem statement trước khi tìm hiểu |
 | Mức can thiệp AI | | |
 | Quyết định | | |
 
@@ -200,11 +200,11 @@ flowchart TD
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
+| CP1 Scan | Nghiên cứu và gợi ý thêm 10 problem card | Cho tôi biết process sơ bộ và template cũng như ý tưởng | AI cho nhiều problem trùng nhau | Chọn 1 vài ví dụ từ AI và từ đó sinh thêm câu hỏi |
 | CP2 Problem Card | | | | |
 | CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP5 Quy trình | Dùng để chỉnh sữa flow chart gợi ý process | Chỉnh flow chart lẹ và điền thông tin quy trình | AI tạo ra nhiều process hơn cần thiết | Xóa bớt những process không cần và chỉnh thêm thông tin quy trình |
+| CP5–6 Problem Statement | Dùng AI để phản biện các tiêu chí đưa ra; giúp fomat file md | Nghĩ thêm những trường hợp cost, thời gian build, ... | | Cùng tranh luận hỏi ý kiến trước khi quyết định |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
@@ -213,22 +213,25 @@ flowchart TD
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** Những khó khăn từ phía không phải kỹ thuật gặp phải củng có khá nhiều điểm tương đồng với nhau. Và không có 1 bài toán chung nào có thể giải quyết được đa số vấn đề
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?** Nhóm mình đưa ra giải pháp với nhiều tiêu chí như cái này có thể dùng workflow với rule thay vì AI nhưng nhận ra có vài vấn đề có bottle neck là từ phía người thiếu thông tin để ra quyết định kịp thời
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.** Có mình bị phản biện phần tick của IT nên được phân loại và điều hành bởi AI  trường hợp của mình là dù có kênh và công cụ riêng nhưng người assign quên và không update do chưa quen quy trình mới và quá nhiều trách nhiệm cần giải quyết trước
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?** Không chắc tại mình dùng AI để phản biện những problem mình và suy nghĩ tỗng hợp với sửa điểm lại
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Đặt mình vào trường hợp bị vướng, gặp problem. Và nghĩ ra problem cốt lõi 
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Tôi sẽ phản biện nếu muốn thông tin của ứng cử viên theo định dạng mẫu thì chỉ limit CV qua web của công ty và để ứng cử viên tự điền theo biểu mẫu để giảm trách nhiệm từ HR thay vì ứng dụng AI như các tập đoàn lớn hiện tại đang làm
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
----
+--- Problem là HR nhận nhiều CV của ứng cử viên và phải tổng kết thông tin trước khi phân loại để phỏng vấn. Quy trình lấy thông tin và điền thủ công, quy trình được đề xuất là cắt giảm quy trình lấy và nhập dữ liệu thủ công chỉ tập trung vào review với phân loại hồ sơ. Metric muốn đo là tổng số hồ sơ tiếp nhận đã phân loại và có thông tin trên dữ liệu ứng cử viên. Boundry là AI không tự quyêt duyệt hồ sơ, không tự loại hồ sơ thiếu thông tin và tưởng tượng số không có thực.
 
 ## 7. Tài liệu tham khảo
 
--
+- Lab slide
+- Lecture day 2 slide
