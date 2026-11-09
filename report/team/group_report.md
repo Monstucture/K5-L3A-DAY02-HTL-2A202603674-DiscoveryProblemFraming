@@ -239,13 +239,13 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 Bài của nhóm nằm ở ô: ```Vùng 1: Thấp Phức Tạp - Thấp Mơ Hồ```
 
-Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản
+Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò ở bước đầu tiên
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | HR đọc tài liệu thủ công hoặc yêu cầu ứng viên điền vào form có sẵn hoặc sử dụng các công cụ của bên thứ 3 | Không  | | |
+| **No AI** (sửa quy trình) | HR đọc tài liệu thủ công *hoặc* yêu cầu ứng viên điền vào form có sẵn *hoặc* sử dụng các công cụ của bên thứ 3 | Nếu số lượng ứng tuyển ít, hoặc cty có ngân sách sử dụng dịch vụ bên thứ 3 |  | |
 | **Rule** | | | | |
 | **Workflow** | | | | |
 | **Agent** | | | | |
