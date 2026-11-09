@@ -113,7 +113,7 @@ Chuyển sang chữ ký số, hóa đơn điện tử
 
 - Card số: 1
 - Vì sao: mục đích, đầu ra dữ liệu rõ ràng
-- Câu hỏi muốn nhóm phản biện: Vì công ty không tuyển dụng thường xuyên, có nên đầu tư để áp dụng AI
+- Câu hỏi muốn nhóm phản biện: Vì công ty không tuyển dụng thường xuyên, có nên đầu tư để áp dụng AI?
 
 ### AI đã phản biện card thế nào
 
