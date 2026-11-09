@@ -73,3 +73,21 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 -  Mỗi người có những hướng tư duy khác nhau, logic tốt, được học hỏi nhiều từ các bạn trong nhóm
 -  Nếu ra vấn đề mà nhóm gặp phải và các hướng giải quyết của mỗi người khác nhau nhưng đều rất tốt
+
+### NguyenSonTung-2A202603658
+
+**Phần việc phụ trách:**
+
+- CP4, CP6
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Problem Card được chọn. Checkpoint 4, Checkpoint 6
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Phần CP4, CP6 trong `group_report.md`
+
+**Điều mình học được từ phần nhóm:**
+
+- Kỹ năng làm việc team work, sắp xếp thời gian, phối hợp làm việc.
