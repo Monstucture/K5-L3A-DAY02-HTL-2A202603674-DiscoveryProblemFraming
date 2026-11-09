@@ -5,7 +5,7 @@
 ## Thông tin nhóm
 
 - Tên nhóm: HTL
-- Candidate problem nhóm chọn (1 câu): 
+- Candidate problem nhóm chọn (1 câu): Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
@@ -41,7 +41,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- 
+- Team Lead, CP5, CP6
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
@@ -49,7 +49,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- PC3
+- Phần CP3, CP5, CP6 trong `group_report.md`
 
 **Điều mình học được từ phần nhóm:**
 

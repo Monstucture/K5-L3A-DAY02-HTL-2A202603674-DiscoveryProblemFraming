@@ -7,7 +7,7 @@
 
 - Tên nhóm: HTL
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu): Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng
+- Candidate problem được chọn (1 câu): Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -29,38 +29,35 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | 1, 3, 6 | Pain từ người khác |
-| B | 2, 4 | Cần đọc tổng hợp nhiều thông tin |
-| C | 5 | Task tốn thời gian |
+| A - Thu thập / tổng hợp CV | Nhận lượng CV từ nhiều nguồn như LinkedIN, topCV, timviecIT,...; phải tổng hợp thông tin tất cả ứng viên và xuất vào một danh sách | Thu thập thông tin từ nhiều CV và đưa về một nơi tập trung |
+| B - Trích xuất / chuẩn hóa dữ liệu | Đọc CV, nhập thông tin; CV mỗi có định dạng khác nhau, thiếu thông tin, trùng lặp do họ gửi từ nhiều nguồn | Chuyển dữ liệu không đồng nhất thành cấu trúc thống nhất để dễ quản lý |
+| C - Tìm kiếm / sàng lọc ứng viên | Lọc các CV đáp ứng yêu cầu tuyển dụng, xác định ứng viên phù hợp | Đánh giá lượng lớn thông tin để tìm ra những ứng viên phù hợp |
+| D - Sắp xếp / điều phối lịch phỏng vấn | Sắp xếp lịch cho ứng viên và 3–4 người phụ trách tuyển dụng, tránh trùng lịch; xử lý lịch thay đổi | Trao đổi thời gian và lịch trình của nhiều người để tìm được khung giờ phù hợp |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Lấy hoàn chỉnh tất cả thông tin của các ứng cử viên vô trường tổng hơp trong một danh da sách để phân công xử lý cũng như track progress
+├── Opportunity A: Khi nhận CV từ nhiều nguồn khác nhau, HR có thể tập hợp tất cả CV vào một nơi mà không phải tải xuống và nhập lại thông tin các ứng cử viên thủ công có thể là google sheets, JSON fomat hay phần mềm tương tự
+├── Opportunity B: Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại
+└── Opportunity C: HR cần có thể tìm kiếm, lọc và theo dõi tình trạng xử lý của từng ứng viên để tránh bỏ sót trong quá trình tuyển dụng, cũng như lưu giữ hồ sơ để gọi khi team trống vị trí phù hợp
 ```
-
-Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
--
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| A — Thu thập thông tin từ nhiều CV và đưa về một nơi tập trung | 5 | 3 | 5 | 5 | 3 | 5 | 3 | 26/35 |
+| B - Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại | 5 | 3 | 5 | 5 | 3 | 5 | 4 | 29/35 |
+| HR cần có thể tìm kiếm, lọc và theo dõi tình trạng xử lý của từng ứng viên để tránh bỏ sót trong quá trình tuyển dụng, cũng như lưu giữ hồ sơ để gọi khi team trống vị trí phù hợp | 5 | 3 | 2 | 2 | 4 | 5 | 3 | 24/35 |
 
-**Candidate được chọn:**
+**Candidate được chọn:** Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại
 
-**Vì sao chọn:**
+**Vì sao chọn:** Với điểm cao nhất và impact lớn nhất với bộ phận sử dụng, cũng như đây là 1 vị trí có quy trình rõ ràng và thấy rõ bộ phận này đang cần sự trợ giúp của AI để đẩy nhanh quá trình cũng như giúp giảm bớt sai sót.
 
-**Vì sao loại các candidate còn lại:**
+**Vì sao loại các candidate còn lại:** Scope quá rộng không nắm rõ quy trình sử lý cũng như không tạo rõ được giá trị tức thời cũng như không hiểu domain.
 
 **Xử lý bất đồng (nếu có):**
 
