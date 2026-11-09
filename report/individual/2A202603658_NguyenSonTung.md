@@ -62,9 +62,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
-- AI sẽ OCR CV nếu là file ảnh và/hoặc đọc tài liệu (nếu là file doc...) => Json object => Lưu database
-```text
 
+```text
+- AI sẽ OCR CV nếu là file ảnh và/hoặc đọc tài liệu (nếu là file doc...) => Json object => Lưu database
 ```
 
 ### Problem Card #2
@@ -80,12 +80,12 @@ Quy trình nháp hiện tại:
 | Success metric (baseline → target) | từ 4-5 ngày xuống còn 1-2 ngày |
 | Phương án không dùng AI | Yêu cầu đối tác, kế toán, nhân viên thống nhất số hóa các loại giấy tờ |
 | Giả thuyết về AI (nếu có) | OCR, lọc thông tin từ bản mềm |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết | Workflow
+| Cảm nhận nhanh | Workflow | 
 
 Quy trình nháp hiện tại:
-- AI sẽ OCR => Nhóm và phân các loại giấy tờ: phiếu thu, phiếu chi, hóa đơn...
-```text
 
+```text
+- AI sẽ OCR => Nhóm và phân các loại giấy tờ: phiếu thu, phiếu chi, hóa đơn...
 ```
 
 ### Problem Card #3
@@ -101,7 +101,7 @@ Quy trình nháp hiện tại:
 | Success metric (baseline → target) | Ký duyệt chi ngay khi có hóa đơn |
 | Phương án không dùng AI | Đợi sếp |
 | Giả thuyết về AI (nếu có) | Không dùng AI |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết | NO AI
+| Cảm nhận nhanh | NO AI |
 
 Quy trình nháp hiện tại:
 Chuyển sang chữ ký số, hóa đơn điện tử
