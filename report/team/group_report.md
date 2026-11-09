@@ -275,29 +275,36 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | HR phụ trách tiếp nhận và tổng hợp CV, mỗi đợt nhận 500–1000 hồ sơ (50–100 CV/ngày) từ nhiều nguồn|
+| **Quy trình** |Tiếp nhận CV → Tập hợp CV → Đọc CV → Trích xuất thông tin → Nhập vào Excel/ATS → Kiểm tra và tổng hợp danh sách |
+| **Bottleneck** | Bước đọc và nhập tay (3–10 phút/CV): HR chỉ xử lý được 10–15 CV/ngày trong khi nhận 50–100 CV/ngày, nên hồ sơ dồn và danh sách tổng hợp chậm khoảng 1 tuần sau hạn nộp|
+| **Impact** |Chậm sàng lọc, có nguy cơ mất ứng viên tốt; sai sót và trùng lặp khi nhập tay; không có dữ liệu chuẩn để làm dashboard báo cáo |
+| **Success Metric** (baseline → target, cách đo) | (1) Thời gian HR thao tác: 3–10 phút/CV → dưới 1 phút/CV; (2) CV xử lý được: 10–15/ngày → toàn bộ 50–100 CV nhận trong ngày; (3) Độ chính xác trường bắt buộc (họ tên, email, SĐT, vị trí) ≥ 98%, các trường còn lại ≥ 90%; (4) Tỷ lệ CV bị gắn cờ cần HR xem ≤ 30%. Đo trên mẫu 100 CV thật, so với bản HR nhập tay và CV gốc  |
+| **Boundary** |AI không tự loại hay chấm điểm ứng viên, không quyết định tuyển, không bịa thông tin thiếu, không gửi email cho ứng viên, không ghi đè dữ liệu HR đã xác nhận|
+| **AI intervention point** |Bước 3 (đọc CV và trích xuất thông tin) và một phần bước 4 (chuẩn hóa); các bước kiểm tra trùng, kiểm tra định dạng dùng Rule|
+| **Mức chọn** |Workflow |
+| **Rủi ro & người kiểm tra** | AI trích sai mà không bị gắn cờ → HR kiểm tra ngẫu nhiên 10% bản ghi không bị gắn cờ mỗi đợt; gộp nhầm ứng viên → HR duyệt mọi trường hợp gộp; dữ liệu cá nhân → người phụ trách HR/IT kiểm tra nơi lưu và xử lý dữ liệu trước khi dùng |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
-
-**Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
-
+| Bottleneck | Đọc và nhập tay, chưa có số | Có số: 3–10 phút/CV, 10–15 CV/ngày so với 50–100 CV nhận/ngày | Để thấy rõ khoảng chênh gây dồn hồ sơ |
+| Success Metric | "Hơn 20 CV/ngày với độ chính xác cao" | 4 chỉ số có baseline, target và cách đo; độ chính xác theo từng trường | 20 CV/ngày vẫn thấp hơn lượng CV nhận; "độ chính xác cao" không đo được |
+| Boundary | Chưa có "không chấm điểm" | Thêm "không chấm điểm ứng viên" | Research (JourneyFront) cho thấy dễ trượt sang chấm điểm, việc đó thuộc HR |
+| AI intervention point | Chưa ghi | Bước 3 và một phần bước 4 | Làm rõ AI chỉ làm một bước, phần còn lại là Rule và con người |
+| Rủi ro & người kiểm tra | Chưa ghi | Kiểm tra ngẫu nhiên 10%, duyệt gộp, kiểm tra dữ liệu cá nhân | Lỗi nguy hiểm nhất là lỗi không bị gắn cờ |
+ 
+**Tiêu chí đánh giá đầu ra của AI:**
+ 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Đúng trường bắt buộc | Họ tên, email, SĐT, vị trí ứng tuyển khớp với CV gốc ở ≥ 98% CV trong mẫu | Sai email hoặc SĐT ở hơn 2% CV |
+| 2 | Không bịa thông tin | Trường không có trong CV được để trống và gắn cờ | Có giá trị không xuất hiện trong CV gốc |
+| 3 | Chuẩn hóa định dạng | SĐT, ngày tháng, số năm kinh nghiệm đúng định dạng chung và qua được Rule kiểm tra | Cùng một loại thông tin được ghi nhiều kiểu khác nhau |
+| 4 | Phát hiện trùng đúng | CV cùng email/SĐT được đề xuất gộp; không gộp hai người khác nhau | Gộp nhầm hai ứng viên, hoặc bỏ sót CV trùng rõ ràng |
+| 5 | Gắn cờ đúng chỗ | Lỗi lọt qua mà không bị gắn cờ ≤ 2% số bản ghi; tỷ lệ CV bị gắn cờ ≤ 30% | Nhiều lỗi không bị gắn cờ, hoặc gắn cờ quá nhiều khiến HR phải xem lại gần hết |
+
 
 ---
 
@@ -307,25 +314,28 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | Có tín hiệu từ khảo sát nước ngoài (mục 3.2) nhưng chưa phỏng vấn HR thật; chưa biết công ty mục tiêu đã có ATS với tính năng xử lý CV hay chưa |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Thấp | Đầu ra là bảng với các trường quen thuộc, có gắn cờ và link CV gốc; HR đã quen làm việc với Excel/ATS |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | TB | Công cụ trích xuất bằng AI có sẵn, nhưng chưa đo độ chính xác trên CV tiếng Việt, CV 2 cột, CV dạng ảnh; số 98% trong nguồn 3 là nhận dạng chữ trong mô phỏng |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Cao | CV chứa dữ liệu cá nhân; gửi qua dịch vụ AI bên ngoài cần tuân thủ quy định bảo vệ dữ liệu cá nhân của Việt Nam (Nghị định 13/2023/NĐ-CP và Luật Bảo vệ dữ liệu cá nhân, hiệu lực từ 01/01/2026; nhóm cần tự kiểm lại). Chưa rõ ai vận hành và chi phí theo số CV |
 
 ### 8.2. Kết luận
 
 **Quyết định:** Go / Not Yet / No-Go
 
-**Lý do:**
-
-**Nếu Go — pilot nhỏ nhất:**
-
+**Quyết định:** Not Yet
+ 
+**Lý do:** Vấn đề có vẻ thật và mức Workflow là hợp lý, nhưng bằng chứng hiện có đều là tài liệu gián tiếp; nhóm chưa phỏng vấn HR nào, chưa đo baseline thật, chưa biết công cụ có sẵn (ATS) sai bao nhiêu với CV tiếng Việt, và rủi ro dữ liệu cá nhân đang ở mức Cao.
+ 
+**Nếu Go — pilot nhỏ nhất:** Lấy 100 CV thật của một vị trí đã đóng (đã được phép sử dụng hoặc đã ẩn thông tin nhạy cảm), chạy trích xuất bằng một công cụ AI có sẵn với danh sách trường cố định, so với bảng HR đã nhập tay, đo 4 chỉ số ở mục 7. Không cần xây phần mềm; một bảng tính và một prompt là đủ cho pilot.
+ 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
-
+1. Phỏng vấn ít nhất 3 HR thật: bấm giờ thời gian đọc và nhập 1 CV, đếm số CV/đợt, hỏi lần gần nhất bị dồn hồ sơ.
+2. Kiểm tra công ty mục tiêu đã có ATS chưa; nếu có, thử tính năng xử lý CV sẵn có trên 20–30 CV và đếm lỗi.
+3. Hỏi bộ phận HR/IT về quy định dùng dịch vụ AI bên ngoài với dữ liệu ứng viên.
+**Nếu No-Go — nên làm gì thay AI:** Chuẩn hóa form ứng tuyển với các trường bắt buộc, dùng ATS có sẵn, và dùng Rule để kiểm tra trùng theo email/SĐT.
+ 
+**Ngưỡng dừng:** Nếu sau pilot 100 CV mà độ chính xác trường bắt buộc dưới 95%, hoặc hơn 30% CV bị gắn cờ, hoặc thời gian HR thao tác không giảm ít nhất 50% so với nhập tay, thì dừng và quay về phương án No AI / Rule (form ứng tuyển chuẩn + công cụ có sẵn của ATS).
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
