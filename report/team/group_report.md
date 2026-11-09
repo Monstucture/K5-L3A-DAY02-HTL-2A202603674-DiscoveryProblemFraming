@@ -315,25 +315,28 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | Có tín hiệu từ khảo sát nước ngoài (mục 3.2) nhưng chưa phỏng vấn HR thật; chưa biết công ty mục tiêu đã có ATS với tính năng xử lý CV hay chưa |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Thấp | Đầu ra là bảng với các trường quen thuộc, có gắn cờ và link CV gốc; HR đã quen làm việc với Excel/ATS |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | TB | Công cụ trích xuất bằng AI có sẵn, nhưng chưa đo độ chính xác trên CV tiếng Việt, CV 2 cột, CV dạng ảnh; số 98% trong nguồn 3 là nhận dạng chữ trong mô phỏng |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Cao | CV chứa dữ liệu cá nhân; gửi qua dịch vụ AI bên ngoài cần tuân thủ quy định bảo vệ dữ liệu cá nhân của Việt Nam (Nghị định 13/2023/NĐ-CP và Luật Bảo vệ dữ liệu cá nhân, hiệu lực từ 01/01/2026; nhóm cần tự kiểm lại). Chưa rõ ai vận hành và chi phí theo số CV |
 
 ### 8.2. Kết luận
 
 **Quyết định:** Go / Not Yet / No-Go
 
-**Lý do:**
-
-**Nếu Go — pilot nhỏ nhất:**
-
+**Quyết định:** Not Yet
+ 
+**Lý do:** Vấn đề có vẻ thật và mức Workflow là hợp lý, nhưng bằng chứng hiện có đều là tài liệu gián tiếp; nhóm chưa phỏng vấn HR nào, chưa đo baseline thật, chưa biết công cụ có sẵn (ATS) sai bao nhiêu với CV tiếng Việt, và rủi ro dữ liệu cá nhân đang ở mức Cao.
+ 
+**Nếu Go — pilot nhỏ nhất:** Lấy 100 CV thật của một vị trí đã đóng (đã được phép sử dụng hoặc đã ẩn thông tin nhạy cảm), chạy trích xuất bằng một công cụ AI có sẵn với danh sách trường cố định, so với bảng HR đã nhập tay, đo 4 chỉ số ở mục 7. Không cần xây phần mềm; một bảng tính và một prompt là đủ cho pilot.
+ 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
-
+1. Phỏng vấn ít nhất 3 HR thật: bấm giờ thời gian đọc và nhập 1 CV, đếm số CV/đợt, hỏi lần gần nhất bị dồn hồ sơ.
+2. Kiểm tra công ty mục tiêu đã có ATS chưa; nếu có, thử tính năng xử lý CV sẵn có trên 20–30 CV và đếm lỗi.
+3. Hỏi bộ phận HR/IT về quy định dùng dịch vụ AI bên ngoài với dữ liệu ứng viên.
+**Nếu No-Go — nên làm gì thay AI:** Chuẩn hóa form ứng tuyển với các trường bắt buộc, dùng ATS có sẵn, và dùng Rule để kiểm tra trùng theo email/SĐT.
+ 
+**Ngưỡng dừng:** Nếu sau pilot 100 CV mà độ chính xác trường bắt buộc dưới 95%, hoặc hơn 30% CV bị gắn cờ, hoặc thời gian HR thao tác không giảm ít nhất 50% so với nhập tay, thì dừng và quay về phương án No AI / Rule (form ứng tuyển chuẩn + công cụ có sẵn của ATS).
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
