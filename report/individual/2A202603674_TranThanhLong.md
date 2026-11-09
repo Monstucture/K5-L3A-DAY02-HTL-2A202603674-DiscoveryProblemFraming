@@ -5,11 +5,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repository:
+- Họ tên: Trần Thanh Long
+- MSSV: 2A202603674
+- Email trường (không bắt buộc, repo có thể để public): 26ai.longtt2@vinuni.edu.vn
+- Tên nhóm: 
+- Link repository: 
 
 ---
 

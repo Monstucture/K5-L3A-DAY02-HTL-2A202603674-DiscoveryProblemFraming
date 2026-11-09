@@ -4,15 +4,15 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Candidate problem nhóm chọn (1 câu):
+- Tên nhóm: HTL
+- Candidate problem nhóm chọn (1 câu): 
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Repo cá nhân |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Trần Thanh Long | 2A202603674 |  | |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
