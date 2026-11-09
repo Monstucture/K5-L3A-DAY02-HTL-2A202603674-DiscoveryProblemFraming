@@ -59,7 +59,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Success metric (baseline → target) | Giảm thời gian từ 2-3 ngày cho 300CV xuống 10 -15 phút |
 | Phương án không dùng AI | Yêu cầu ứng viên nộp CV theo form  mẫu, dùng app nội bộ đọc form |
 | Giả thuyết về AI (nếu có) | OCR và/hoặc đọc tài liệu |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết | Workflow
+| Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
 - AI sẽ OCR CV nếu là file ảnh và/hoặc đọc tài liệu (nếu là file doc...) => Json object => Lưu database
