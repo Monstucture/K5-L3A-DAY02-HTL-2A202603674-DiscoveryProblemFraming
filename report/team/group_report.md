@@ -330,8 +330,17 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Hạn chế về độ chính xác của công cụ AI hỗ trợ
+- Quan niệm rằng data đầu vào có chất lượng tốt, file có chứa link injection
+- Không có quy trình bảo mật thông tin của công cụ AI nếu sử dụng warpper thay vì in house 
+- Chi phí và thời gian xây dựng công cụ cũng như người sẽ quản lý dự án
+- 1 Ứng viên sử dụng nhiều phiên bản CV khác nhau 1 cái dẫn đến dữ liệu 
+
+Hướng tiếp theo để hạn chế rủi ro:
+- Triển khai theo từng giai đoạn. Đầu tiên test prototype AI trích xuất dữ liệu để đảm bảo chất lượng đầu vào. Xây dựng MVP sơ bộ lấy API từ nhiều trang tuyển dụng dùng rule và workflow. Đánh giá hiệu quả trước khi tiếp tục triển khai và sau khi confirm được hiệu xuất thì bắt đầu build để triển khai trên quy mô thật
 
 ## 10. Tài liệu tham khảo
 
--
+- Slide_Lab_Day02_K5.html
+- Slide lecture day2
+- [03-international-frameworks.md](../../docs/03-international-frameworks.md)
