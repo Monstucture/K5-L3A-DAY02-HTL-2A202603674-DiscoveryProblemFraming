@@ -1,13 +1,13 @@
 # Báo cáo nhóm — Day 02 Discovery & Problem Framing
 
-> Bản chung của nhóm, viết trên repo do nhóm trưởng fork. Không copy file này sang repo cá nhân.
+> Bản chung của nhóm. Khi chốt bản cuối, **mỗi thành viên copy file này vào repo cá nhân**.
 > Template chi tiết và prompt mẫu: [docs/01-worksheet.md](../../docs/01-worksheet.md). Bài mẫu: [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md).
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: HTL
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu):  
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -18,26 +18,20 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Long | Lấy thông tin và đánh giá từ các Technical Staff để đưa ra quyết định sau nhiều vòng phỏng vấn | HR | Các ngày và vòng phỏng vấn rời rạc làm thiếu thông tin để đánh giá | |
+| 2 | Long | Khi có nhiều ticket đang được xử lý đồng thời, tôi muốn biết mỗi ticket đang ở trạng thái nào, ai chịu trách nhiệm chính và đang bị vướng ở đâu, để đảm bảo công việc được tiếp tục xử lý và không bị bỏ quên | IT Support / IT Team Lead | Bước cập nhật trạng thái và người phụ trách. Có trường hợp nhiều người cùng tham gia một task nhưng không rõ ai chịu trách nhiệm chính; ticket không được reassign hoặc close khi công việc đã thay đổi trạng thái | Có nhất thiết phải sử dụng AI cho việc phân loại ticket? Thay vào đó, làm 1 trang web dashboard tổng hợp ticket chung (Tùng) |
+| 3 | Hoàng | Khi một vị trí có khoảng 80-150 CV, tôi muốn biết tối thiểu ai phù hợp ở trong vị trí đó trong vòng 2 ngày | HR | Phụ trách tuyển dụng 3-4 người cùng một vị trí | Thời gian xủ lý 1 CV và tiêu chí thực để quyết dịnh người phù hợp cũng như số lượng (Long) |
+| 4 | Hoàng | Khi đã chốt được những cá nhân được chọn thì sẽ sắp xếp một thời gian phỏng vấn phù hợp để không bị trùng lịch với người khác | HR | làm việc với trưởng bộ phận(phỏng vấn), ứng viên | |
+| 5 | Tùng |  Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng | HR | Tốn thời gian để nhập dữ liệu vào bảng tổng hợp với các trường cố định  *Họ tên, email...*. |  |
+| 6 | Tùng | Quy trình trình ký và duyệt chi bị nghẽn do hóa đơn/chứng từ bản cứng chờ sếp duyệt trực tiếp, dẫn đến thanh toán chậm cho nhà cung cấp | Kế toán, Trưởng phòng, Ban Giám Đốc | Diễn ra liên tục hàng tuần, làm trễ hạn thanh toán và ảnh hưởng đến uy tín với đối tác | Quy trình thì bạn định dùng AI để duyệt những cái dễ hay AI để tóm tắt và sếp duyệt. Nều dùng AI thì bạn căn cứ vào những yếu tố nào để tự động duyệt (Long) |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A | 1, 3, 6 | Pain từ người khác |
+| B | 2, 4 | Cần đọc tổng hợp nhiều thông tin |
+| C | 5 | Task tốn thời gian |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
@@ -78,12 +72,12 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Bộ phận HR sẽ gặp áp lực lớn về thời gian và công sức khi phải nhập liệu bằng tay. Rất cần cơ chế tự động hóa việc nhập liệu | Value | 5 | 5 | |
+| 2 | Các file CV gửi về với nhiều định dạng khác nhau có thể được trích xuất thông tin chính xác lên đến 90% | Feasibility | 5 | 5 | |
+| 3 | Có một bảng tổng hợp tự động với độ chính xác cao mà không cần HR phải mở lại từng CV  | Usability | 4 | 3 | |
+| 4 | Chi phí và công sức tích hợp hệ thống quét CV tự động thấp hơn đáng kể so với chi phí thuê ngoài hoặc để HR mất thời gian nhập liệu thủ công.| Viability | 4 | 3 | |
+| 5 | Các trường thông tin cố định giúp HR đánh giá sơ loại nhanh chóng mà không cần đọc các thông tin khác trong CV | Value | 4 | 3 | |
+| 6 | HR có thể dễ dàng thao tác, chỉnh sửa hoặc gán nhãn lại trực tiếp trên giao diện bảng tổng hợp kết quả của công cụ.| Usability | 3 | 5 | |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
@@ -91,14 +85,28 @@ Giả định nhóm kiểm chứng trong buổi này:
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: review
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
+| Người được hỏi (vai trò, không ghi tên thật) | Rất cần cơ chế tự động hóa việc nhập liệu https://investor.equifax.com/news-events/press-releases/detail/1365/technology-automation-is-a-top-challenge-for-half-of-hr |
+| Câu nói đáng nhớ nhất (nguyên văn) | "As AI and emerging technologies proliferate, HR professionals increasingly want to automate the time-intensive aspects of their days so they can free up more time to focus on the human-first parts of their jobs that lead to more successful employee engagement and retention programs," |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
+| Hiện đang xử lý bằng cách nào (workaround)? | |
+| Mất bao lâu, bao lần? | |
+| Insight / opportunity rút ra | |
+
+| Người được hỏi (vai trò, không ghi tên thật) | Rất cần cơ chế tự động hóa việc nhập liệu https://empikalyze.in/knowledge/recruitment-statistics/ai-recruitment-statistics|
+| Câu nói đáng nhớ nhất (nguyên văn) | "LinkedIn's Future of Recruiting research consistently reports that a majority of talent professionals are optimistic about AI and believe it will make their jobs more efficient rather than replace them." |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
+| Hiện đang xử lý bằng cách nào (workaround)? | |
+| Mất bao lâu, bao lần? | |
+| Insight / opportunity rút ra | |
+
+| Người được hỏi (vai trò, không ghi tên thật) | Trích xuất thông tin chính xác lên đến 90% https://ieeexplore.ieee.org/document/10898204 |
+| Câu nói đáng nhớ nhất (nguyên văn) | "The simulation experiment showed that the text recognition rate of 2,000 resumes was 98%, the accuracy rate of text recognition was 98%" |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
 | Hiện đang xử lý bằng cách nào (workaround)? | |
 | Mất bao lâu, bao lần? | |
@@ -108,7 +116,7 @@ Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Review | 3 | 3 | 0 |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
@@ -116,9 +124,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| factorial | https://factorial.com/applicant-tracking-system | tự lọc ứng viên | Best as AI for business | | |
+| journeyfront | https://www.journeyfront.com/ai-resume-scoring | tự lọc ứng viên | | | | |
+| greenhouse | https://grow.greenhouse.com/ | tự sàng lọc ứng viên | | | |
 
 ---
 
