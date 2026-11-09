@@ -119,9 +119,9 @@ Tổng hợp:
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| factorial | https://factorial.com/applicant-tracking-system | tự lọc ứng viên | Best as AI for business | | |
-| journeyfront | https://www.journeyfront.com/ai-resume-scoring | tự lọc ứng viên | | | | |
-| greenhouse | https://grow.greenhouse.com/ | tự sàng lọc ứng viên | | | |
+| factorial | https://factorial.com/applicant-tracking-system | Tự động hóa toàn bộ vòng đời tuyển dụng từ sàng lọc CV, quản lý pipeline đến lên lịch. | Giao diện thân thiện, tích hợp toàn bộ quy trình HR | Phù hợp hơn với doanh nghiệp vừa và nhỏ | Tích hợp dữ liệu CV ngay vào hệ thống hồ sơ nhân sự từ bước đầu giúp giảm thao tác thủ công về sau. |
+| journeyfront | https://www.journeyfront.com/ai-resume-scoring | Tự động chấm điểm và xếp hạng CV dựa trên tiêu chí kỹ năng và văn hóa doanh nghiệp | Chuyên sâu về thuật toán AI chấm điểm định lượng | Quá tập trung vào điểm số số hóa có thể bỏ lỡ các ứng viên có tiềm năng ẩn | Giải pháp cần có bước chấm điểm tương thích | 
+| greenhouse | https://grow.greenhouse.com/ | Tự sàng lọc ứng viên và cấu trúc hóa quy trình phỏng vấn quy mô lớn. | Quy trình cực kỳ bài bản, khả năng tích hợp mạnh mẽ với các AI bên thứ ba | Chi phí rất cao, thời gian triển khai phức tạp | Cần thiết lập sẵn các tiêu chuẩn cứng trước khi giao cho AI tự động lọc loại |
 
 ---
 
