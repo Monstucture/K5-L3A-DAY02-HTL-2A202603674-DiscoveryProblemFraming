@@ -104,9 +104,9 @@ Quy trình nháp hiện tại:
 | Cảm nhận nhanh | NO AI |
 
 Quy trình nháp hiện tại:
-Chuyển sang chữ ký số, hóa đơn điện tử
-```text
 
+```text
+Chuyển sang chữ ký số, hóa đơn điện tử
 ```
 
 ### Card muốn pitch nhất
