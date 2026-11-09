@@ -183,14 +183,14 @@ flowchart TD
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
+| Pitch Problem Card | Add 2 problem card cá nhân của tôi | Củng cố thêm ý vào bài nhóm |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Thời gian xủ lý 1 CV và tiêu chí thực để quyết dịnh người phù hợp cũng như số lượng; Quy trình thì bạn định dùng AI để duyệt những cái dễ hay AI để tóm tắt và sếp duyệt. Nều dùng AI thì bạn căn cứ vào những yếu tố nào để tự động duyệt  |  |
+| Nhận phản biện | Câu hỏi tôi nhận được: Có nhất thiết phải sử dụng AI cho việc phân loại ticket? Thay vào đó, làm 1 trang web dashboard tổng hợp ticket chung | Tôi đã sửa gì: Việc phân loại những ticket có đủ số liệu giup công việc của support dễ dàng hơn |
+| Gom cluster / cây OST | Gom cluster các vấn đề liên quan | |
+| Chọn candidate problem | Mọi người thống nhất candidate problem để build process | Đẩy tiến độ và xác định mục tiêu nhóm |
+| Kiểm chứng / research | Review phần bài làm của Tùng | |
+| Quy trình nhóm | Tạo quy trình trước và sau | |
+| Problem Statement | Dùng AI để phản biên về độ cần thiết của quy trình | giúp loại bỏ các problem statement trước khi tìm hiểu |
 | Mức can thiệp AI | | |
 | Quyết định | | |
 
@@ -200,11 +200,11 @@ flowchart TD
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
+| CP1 Scan | Nghiên cứu và gợi ý thêm 10 problem card | Cho tôi biết process sơ bộ và template cũng như ý tưởng | AI cho nhiều problem trùng nhau | Chọn 1 vài ví dụ từ AI và từ đó sinh thêm câu hỏi |
 | CP2 Problem Card | | | | |
 | CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP5 Quy trình | Dùng để chỉnh sữa flow chart gợi ý process | Chỉnh flow chart lẹ và điền thông tin quy trình | AI tạo ra nhiều process hơn cần thiết | Xóa bớt những process không cần và chỉnh thêm thông tin quy trình |
+| CP5–6 Problem Statement |  | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---

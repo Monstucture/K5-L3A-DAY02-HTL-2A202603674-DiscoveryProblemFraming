@@ -6,7 +6,6 @@
 ## 1. Thông tin nhóm
 
 - Tên nhóm: HTL
-- Tên nhóm: HTL
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Nhận nhiều CV với định dạng và fomat khác nhau thông tin cần được trích xuất và chuẩn hóa theo cùng một cấu trúc để dễ dàng tra cứu và có thể dùng các thông tinh được xuất làm dashboard dùng cho báo cáo/ phân loại
 - Quyết định cuối: Go / Not Yet / No-Go
@@ -258,17 +257,17 @@ Vì sao: Mục đích rõ ràng, kỹ thuật đơn giản, AI đóng vai trò �
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | AI xử lý CV và lấy thông tin ứng viên thành dữ liệu có cấu trúc, bao gồm: họ tên, email, số điện thoại, học vấn, kinh nghiệm làm việc, kỹ năng,... . AI có thể chỉ ra trường thông tin thiếu hoặc không chắc chắn |
+| **Judgment** — con người cân nhắc, quyết định gì? | HR kiểm tra độ chính xác của thông tin mà AI trích, đối chiếu với CV gốc, chỉnh sửa dữ liệu sai hoặc thiếu và xác nhận các trường hợp nghi ngờ trùng lặp. HR quyết định dữ liệu nào được chấp nhận đưa vào danh sách tổng |
+| **Action** — hành động cuối cùng là gì, ai làm? | Hệ thống tạo bản ghi ứng viên và tổng hợp thành danh sách chung. HR xác nhận kết quả, sau đó xuất danh sách |
+| **Outcome** — đo kết quả bằng gì? | Số lượng hồ sơ được tổng hợp trong kì tuyển dụng, tỷ lệ trích xuất chính xác, sai số, tỷ lệ CV được xử lý thành công, tỷ lệ thông tin phải chỉnh sửa thủ công, số CV bị bỏ sót hoặc trùng lặp |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | File CV của ứng viên (PDF, DOCX), cấu trúc các trường thông tin cần trích xuất và quy tắc chuẩn hóa dữ liệu. CV có sẵn từ nguồn tuyển dụng, HR cần cung cấp hoặc xác nhận cấu trúc dữ liệu đầu ra |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Từ HR sửa hồ sơ mà AI làm sai, đánh dấu trường bị thiếu hoặc sai, xác nhận dữ liệu trùng lặp và phản hồi các CV AI không đọc được. Các trường hợp đã được HR xác nhận có thể dùng làm dữ liệu eval và cải thiện hệ thống |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: HR muốn giảm thời gian đọc CV, trích xuất và nhập thông tin thủ công, nhưng vẫn muốn quyết định của mình trước khi gửi lên báo cáo chính
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: Báo nhầm tệ hơn vì với số liệu sai team HR sẽ rất mất thời gian book lịch
 
 ---
 
