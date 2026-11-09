@@ -119,7 +119,7 @@ Chuyển sang chữ ký số, hóa đơn điện tử
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| Bottleneck chưa đủ sâu: Nhập liệu chỉ là một phần, việc đánh giá độ phù hợp của CV với JD mới là nút thắt thực sự chiếm thời gian của HR.| Đồng ý | Bổ sung tính năng Semantic Matching & Scoring (Chấm điểm mức độ phù hợp với JD) vào quy trình AI bên cạnh việc trích xuất thông tin. Nhưng không nên đẩy luôn việc đánh giá ứng viên sang AI vì ứng viên có thể cheat bằng từ khóa khớp với JD |
 
 ---
 
@@ -127,15 +127,15 @@ Chuyển sang chữ ký số, hóa đơn điện tử
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Pitch Problem Card | Đưa ra vấn đề: Khi có một lượng lớn CV gửi về công ty, cần một danh sách tổng hợp rõ ràng  | Được chọn làm Problem chính để giải quyết của cả team |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | Có nhất thiết phải sử dụng AI cho việc phân loại ticket? Thay vào đó, làm 1 trang web dashboard tổng hợp ticket chung (Tùng) |
+| Nhận phản biện | Câu hỏi tôi nhận được: Quy trình thì bạn định dùng AI để duyệt những cái dễ hay AI để tóm tắt và sếp duyệt. Nều dùng AI thì bạn căn cứ vào những yếu tố nào để tự động duyệt (Long) | Tôi đã sửa gì: Không sử dụng AI cho vấn đề |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
-| Kiểm chứng / research | | |
+| Kiểm chứng / research | Toàn bộ | hoàn thành |
 | Quy trình nhóm | | |
 | Problem Statement | | |
-| Mức can thiệp AI | | |
+| Mức can thiệp AI | 6.1 và 6.2 | hoàn thành |
 | Quyết định | | |
 
 ---
@@ -144,12 +144,12 @@ Chuyển sang chữ ký số, hóa đơn điện tử
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
+| CP1 Scan | Hỏi bổ sung thêm các problems trong hoạt động cty | Bổ sung thêm các problems sát thực tế | Chưa đủ chính xác trong giải quyết vấn đề | Bỏ qua không chọn pain point |
+| CP2 Problem Card | Không | | | |
+| CP4 Research | Không, tự google các kết quả | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP6 Mức can thiệp / quyết định | Hỏi Ai về ma trận mơ hồ x phức tạp | Trả lời đúng rõ ràng | | |
 
 ---
 
